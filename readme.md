@@ -18,6 +18,6 @@ Our extension works seamlessly across major streaming platforms, including Netfl
 Choose the languages you want to translate to and customize the list of common words you want to hide in the settings.
 
 ## Examples
-![Tooltip](/image1.png)
+![Instant translation example](static/demo.webp)
 
-![Tooltip](/image2.png)
+![Hidden words example](static/example.webp)
