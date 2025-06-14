@@ -5,6 +5,7 @@ import {
   Translation,
   YaTranslateResponse,
 } from '../types';
+import { getCulturalContext } from '../culturalContext';
 
 let abortController: AbortController;
 
@@ -138,6 +139,19 @@ export async function translate(
 
   if (!translations?.length) {
     translations = await myMemoryTranslate(text, sourceLang, targetLang);
+  }
+
+  if (sourceLang === 'ko' || targetLang === 'ko') {
+    const context = getCulturalContext(text);
+    if (context) {
+      translations.push({
+        text,
+        pos: '',
+        transcription: '',
+        values: [],
+        context,
+      });
+    }
   }
 
   return translations;

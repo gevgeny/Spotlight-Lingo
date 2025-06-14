@@ -66,6 +66,7 @@ export function getTranslationHTML(translations: Translation[]) {
                 <li class="sub-tr-dict-meaning-item">${value ?? ''}</li>
               `).join('')}
             </ol>
+            ${translation.context ? `<div class="sub-tr-context">${translation.context}</div>` : ''}
           </div>
         `).join('')}
       </div>

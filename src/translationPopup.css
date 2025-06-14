@@ -55,6 +55,14 @@
   word-break: break-all;
 }
 
+.sub-tr-context {
+  margin-top: 4px;
+  padding: 2px 4px;
+  font-size: 13px;
+  color: #ffd966;
+  word-break: break-word;
+}
+
 .sub-tr-loading {
   justify-content: center;
   align-items: center;

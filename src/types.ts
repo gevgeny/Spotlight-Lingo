@@ -87,6 +87,7 @@ export interface Translation {
   pos: string;
   transcription: string;
   values: string[];
+  context?: string;
 }
 
 export const languages = {
