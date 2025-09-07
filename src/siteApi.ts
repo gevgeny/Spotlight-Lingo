@@ -83,6 +83,26 @@ const siteApiMap = {
       document.querySelector<HTMLVideoElement>('#dv-web-player video')?.play();
     },
   },
+  'npo.nl': {
+    subtitleTransformType: 'replace',
+    subtitleSelector: '.bmpui-ui-subtitle-overlay .bmpui-container-wrapper',
+    subtitlePopupSelector: '.bitmovinplayer-container',
+    popupOffsetBottom: 0,
+    pause() {
+      if (
+        document.querySelector<HTMLVideoElement>('.bitmovinplayer-container video')
+          ?.paused
+      )
+        return false;
+      document
+        .querySelector<HTMLVideoElement>('.bitmovinplayer-container video')
+        ?.pause();
+      return true;
+    },
+    play() {
+      document.querySelector<HTMLVideoElement>('.bitmovinplayer-container video')?.play();
+    },
+  },
 } satisfies Record<string, SubtitleApiWithReplace | SubtitleApiWithMask>;
 
 type Host = keyof typeof siteApiMap;

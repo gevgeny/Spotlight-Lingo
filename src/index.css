@@ -1,10 +1,10 @@
-.sub-tr-word {
+.sub-tr-word[class] {
   position: relative;
   display: inline-block;
   pointer-events: auto;
 }
 
-.sub-tr-word-hidden {
+.sub-tr-word-hidden[class] {
   filter: blur(0.2em);
   background-color: rgb(255, 255, 255);
   border-radius: 0.4em;
@@ -13,18 +13,18 @@
   /*transition: all .1s ease-in;*/
 }
 
-.sub-tr-mask {
+.sub-tr-mask[class] {
   position: absolute;
   pointer-events: auto;
 }
 
-.sub-tr-mask-hidden {
+.sub-tr-mask-hidden[class] {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   transition: all .1s ease-in;
 }
 
-.sub-tr-reveal {
+.sub-tr-reveal[class] {
   opacity: 1;
   transform: none;
   filter: none;

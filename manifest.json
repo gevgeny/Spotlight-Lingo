@@ -1,6 +1,6 @@
 {
   "name": "Spotlight Lingo \uD83C\uDF0E. Translate Subtitles: Youtube, Netflix, Amazon Prime",
-  "version": "1.1.8",
+  "version": "1.2.8",
   "description": "Point your mouse to a subtitles word to translate it on Netflix, Amazon Prime, YouTube \uD83C\uDDEC\uD83C\uDDE7\uD83C\uDDEA\uD83C\uDDF8\uD83C\uDDE9\uD83C\uDDEA\uD83C\uDDEB\uD83C\uDDF7\uD83C\uDDEE\uD83C\uDDF9\uD83C\uDDF7\uD83C\uDDFA",
   "manifest_version": 3,
   "background": {
@@ -26,7 +26,8 @@
       "*://*.netflix.com/*",
       "*://*.kino.pub/*",
       "*://*.youtube.com/*",
-      "*://*.primevideo.com/*"
+      "*://*.primevideo.com/*",
+      "*://*.npo.nl/*"
     ],
     "js": ["src/contentScript.ts"]
   }],
@@ -38,7 +39,8 @@
     "https://www.netflix.com/*",
     "https://kino.pub/*",
     "https://www.youtube.com/*",
-    "https://www.primevideo.com/*"
+    "https://www.primevideo.com/*",
+    "https://www.npo.nl/*"
   ],
   "permissions": ["storage"]
 }

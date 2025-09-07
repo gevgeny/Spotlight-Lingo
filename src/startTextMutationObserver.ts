@@ -61,7 +61,7 @@ export default function startTextMutationObserver({
   // It is necessary if user changed a page with video and then came back
   setTimeout(() => {
     startTextMutationObserver({
-      containerSelector: containerSelector,
+      containerSelector,
       onTextAdded,
       onTextRemoved,
       onTextChanged,
